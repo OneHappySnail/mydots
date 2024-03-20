@@ -11,7 +11,6 @@ if %ERRORLEVEL% neq 0 (
 )
 echo:
 
-goto SKIP
 @rem VS Code extenstions
 echo [INFO]: Installing or updating vscode extensions...
 echo:
@@ -29,7 +28,7 @@ call code --install-extension vscodevim.vim --force > nul
 call code --install-extension vscode-icons-team.vscode-icons --force > nul
 call code --install-extension redhat.vscode-xml --force > nul
 call :reset_errorlevel
-:SKIP
+
 @rem VS Code settings.json
 echo y | copy vscode\settings.json %APPDATA%\Code\User\settings.json > nul
 if %ERRORLEVEL% neq 0 (
@@ -41,7 +40,7 @@ if %ERRORLEVEL% neq 0 (
 echo:
 
 @rem Bash config
-echo y | copy git\.bashrc %USERPROFILE%\
+echo y | copy git\.bashrc %USERPROFILE%\ > nul
 if %ERRORLEVEL% neq 0 (
   echo [ERROR]: Failed to upgrade .bashrc
   call :RESET_ERRORLEVEL
