@@ -1,6 +1,11 @@
 @echo off
 echo:
 
+set INSTALL_VS_CODE_EXTENSIONS=0
+if "x-codeextensions"=="x%1" (
+  set INSTALL_VS_CODE_EXTENSIONS=1
+)
+
 @rem Git global config
 echo y | copy git\.gitconfig %USERPROFILE%\ > nul
 if %ERRORLEVEL% neq 0 (
@@ -12,22 +17,24 @@ if %ERRORLEVEL% neq 0 (
 echo:
 
 @rem VS Code extenstions
-echo [INFO]: Installing or updating vscode extensions...
-echo:
-call code --install-extension ms-vscode.cpptools-extension-pack --force > nul
-call code --install-extension streetsidesoftware.code-spell-checker --force  > nul
-call code --install-extension dbaeumer.vscode-eslint --force > nul
-call code --install-extension eamodio.gitlens --force > nul
-call code --install-extension oderwat.indent-rainbow --force > nul
-call code --install-extension ritwickdey.liveserver --force > nul
-call code --install-extension yzhang.markdown-all-in-one --force > nul
-call code --install-extension esbenp.prettier-vscode --force > nul
-call code --install-extension rangav.vscode-thunder-client --force > nul
-call code --install-extension enkia.tokyo-night --force > nul
-call code --install-extension vscodevim.vim --force > nul
-call code --install-extension vscode-icons-team.vscode-icons --force > nul
-call code --install-extension redhat.vscode-xml --force > nul
-call :reset_errorlevel
+if %INSTALL_VS_CODE_EXTENSIONS%==1 (
+  echo [INFO]: Installing or updating vscode extensions...
+  echo:
+  call code --install-extension ms-vscode.cpptools-extension-pack --force > nul
+  call code --install-extension streetsidesoftware.code-spell-checker --force  > nul
+  call code --install-extension dbaeumer.vscode-eslint --force > nul
+  call code --install-extension eamodio.gitlens --force > nul
+  call code --install-extension oderwat.indent-rainbow --force > nul
+  call code --install-extension ritwickdey.liveserver --force > nul
+  call code --install-extension yzhang.markdown-all-in-one --force > nul
+  call code --install-extension esbenp.prettier-vscode --force > nul
+  call code --install-extension rangav.vscode-thunder-client --force > nul
+  call code --install-extension enkia.tokyo-night --force > nul
+  call code --install-extension vscodevim.vim --force > nul
+  call code --install-extension vscode-icons-team.vscode-icons --force > nul
+  call code --install-extension redhat.vscode-xml --force > nul
+  call :reset_errorlevel
+)
 
 @rem VS Code settings.json
 echo y | copy vscode\settings.json %APPDATA%\Code\User\settings.json > nul
