@@ -11,6 +11,16 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
+  "editor.rulers": [
+    {
+      "color": "#2a2a2a",
+      "column": 80
+    },
+    {
+      "color": "#2a2a2a",
+      "column": 120
+    }
+  ],
 
   // Vim plugin
   "vim.leader": "<space>",
@@ -84,10 +94,7 @@
   "C_Cpp.intelliSenseCacheSize": 10,
 
   // Indent rainbow
-  "indentRainbow.excludedLanguages": [
-    "plaintext",
-    "cpp"
-  ],
+  "indentRainbow.excludedLanguages": ["plaintext", "cpp"],
 
   // Thunder client
   "thunder-client.defaultURL": "http://localhost"
