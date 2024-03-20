@@ -105,8 +105,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "[XML]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+    "editor.tabSize": 4
   },
 
   // XML
