@@ -3,14 +3,15 @@
   "workbench.colorTheme": "Tokyo Night",
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
-  
+
   // General configuration
   "editor.tabSize": 2,
   "editor.formatOnSave": false,
   "editor.mouseWheelZoom": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  
+  "extensions.ignoreRecommendations": true,
+
   // Vim plugin
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
