@@ -4,13 +4,24 @@
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
 
-  // General configuration
-  "editor.tabSize": 2,
-  "editor.formatOnSave": false,
+  // Editor
+  "editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.hover.delay": 200,
+  "editor.minimap.autohide": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
   "editor.mouseWheelZoom": true,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "extensions.ignoreRecommendations": true,
+  "editor.roundedSelection": false,
+  "editor.screenReaderAnnounceInlineSuggestion": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
   "editor.rulers": [
     {
       "color": "#2a2a2a",
@@ -21,6 +32,16 @@
       "column": 120
     }
   ],
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // Security
+  "security.workspace.trust.untrustedFiles": "open",
 
   // Vim plugin
   "vim.leader": "<space>",
@@ -84,10 +105,16 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
+  "[XML]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
 
   // XML
   "xml.format.preservedNewlines": 1,
   "xml.format.spaceBeforeEmptyCloseTag": true,
+  "xml.format.splitAttributes": false,
+  "xml.format.enforceQuoteStyle": "preferred",
+  "xml.preferences.quoteStyle": "double",
 
   // C++ / clang
   "C_Cpp.clang_format_fallbackStyle": "Google",
@@ -95,7 +122,48 @@
 
   // Indent rainbow
   "indentRainbow.excludedLanguages": ["plaintext", "cpp"],
+  "indentRainbow.colors": [
+    "rgba(66, 0, 57,0.1)",
+    "rgba(147, 47, 109,0.1)",
+    "rgba(224, 123, 224,0.1)",
+    "rgba(220, 204, 255,0.1)"
+  ],
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
 
   // Thunder client
-  "thunder-client.defaultURL": "http://localhost"
+  "thunder-client.defaultURL": "http://localhost",
+
+  // Git
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.defaultGravatarsStyle": "retro",
+  "gitlens.fileAnnotations.command": "blame",
+  "gitlens.outputLevel": "errors",
+  "gitlens.plusFeatures.enabled": true,
+  "gitlens.proxy": null,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.virtualRepositories.enabled": true,
+
+  // Diff
+  "diffEditor.codeLens": false,
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.experimental.collapseUnchangedRegions": false,
+  "diffEditor.experimental.showEmptyDecorations": true,
+  "diffEditor.experimental.showMoves": false,
+  "diffEditor.experimental.useVersion2": false,
+  "diffEditor.maxComputationTime": 5000,
+  "diffEditor.maxFileSize": 50,
+  "diffEditor.renderIndicators": true,
+  "diffEditor.renderMarginRevertIcon": true,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.wordWrap": "inherit",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Prettier
+  "prettier.endOfLine": "crlf",
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "es5",
+  "prettier.useTabs": false
 }
