@@ -86,6 +86,7 @@ echo             - vscode: https://code.visualstudio.com/#alt-downloads
 echo             - git: https://git-scm.com/download/win
 echo             - grep for Windows: https://github.com/BurntSushi/ripgrep
 echo             - Meslo nerd font: https://github.com/andreberg/Meslo-Font
+echo             - Cascadia font: https://github.com/andreberg/Meslo-Font
 echo:
 
 goto :EOF
