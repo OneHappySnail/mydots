@@ -1,0 +1,38 @@
+[user]
+	name = Dino Pergola
+	email = dino.pergola@gmail.com
+[core]
+	editor = vscode
+[merge]
+  tool = vscode
+[mergetool]
+  prompt = true
+  keepBackup = false
+  trustExitCode = false
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[diff]
+  tool = code
+[difftool "vscode"]
+  cmd = code --wait $LOCAL $REMOTE
+[alias]
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg3 = log --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an'
+  s = status
+  co = checkout
+  cob = checkout -b
+  brl = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  brr = branch -r --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  bra = branch -a --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  res = !git reset --hard
+  pup = push -u origin
+  delb = branch -D
+  delbo = push origin -d
+  reseth = reset --hard
+  restores = restore --staged .
+  restorel = restore .
+  cleanl = clean -f .
+  adda = add .
+  cm = commit -m

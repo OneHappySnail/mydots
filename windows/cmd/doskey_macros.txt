@@ -1,0 +1,3 @@
+ls=dir /a /x
+clear=cls
+cat=type

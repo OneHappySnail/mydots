@@ -1,0 +1,93 @@
+{
+  // Theme
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  
+  // General configuration
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "editor.mouseWheelZoom": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  
+  // Vim plugin
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "k", "c"],
+      "commands": ["editor.action.addCommentLine"]
+    },
+    {
+      "before": ["<leader>", "k", "u"],
+      "command": ["editor.action.removeCommentLine"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "k", "c"],
+      "commands": ["editor.action.addCommentLine"]
+    },
+    {
+      "before": ["<leader>", "k", "u"],
+      "command": ["editor.action.removeCommentLine"]
+    }
+  ],
+
+  // Integrated terminal
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Formatting
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+
+  // XML
+  "xml.format.preservedNewlines": 1,
+  "xml.format.spaceBeforeEmptyCloseTag": true,
+
+  // C++ / clang
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.intelliSenseCacheSize": 10,
+
+  // Indent rainbow
+  "indentRainbow.excludedLanguages": [
+    "plaintext",
+    "cpp"
+  ],
+
+  // Thunder client
+  "thunder-client.defaultURL": "http://localhost"
+}
