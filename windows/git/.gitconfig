@@ -36,3 +36,6 @@
   cleanl = clean -f .
   adda = add .
   cm = commit -m
+  diffs = diff --staged
+  wdiff = diff --word-diff
+  wdiffs = diff --staged --word-diff
