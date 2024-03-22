@@ -22,6 +22,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
+  "editor.wordWrap": "off",
   "editor.rulers": [
     {
       "color": "#2a2a2a",
