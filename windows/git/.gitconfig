@@ -2,7 +2,8 @@
 	name = Dino Pergola
 	email = dino.pergola@gmail.com
 [core]
-	editor = vscode
+	editor = "code --wait"
+  autocrlf = true
 [merge]
   tool = vscode
 [mergetool]
@@ -10,11 +11,11 @@
   keepBackup = false
   trustExitCode = false
 [mergetool "vscode"]
-  cmd = code --wait $MERGED
+  cmd = "code --wait $MERGED"
 [diff]
-  tool = code
+  tool = vscode
 [difftool "vscode"]
-  cmd = code --wait $LOCAL $REMOTE
+  cmd = "code --wait --diff $LOCAL $REMOTE"
 [alias]
   lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
   lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -35,6 +36,9 @@
   restorel = restore .
   cleanl = clean -f .
   adda = add .
+  mnc = merge --no-commit --no-ff
+  mc = merge --continue
+  ma = merge --abor
   cm = commit -m
   diffs = diff --staged
   wdiff = diff --word-diff
