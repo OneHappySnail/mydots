@@ -33,49 +33,73 @@
       "column": 120
     }
   ],
-
   // Extensions
   "extensions.ignoreRecommendations": true,
-
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
   // Security
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
-
   // Vim plugin
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "k", "c"],
-      "commands": ["editor.action.addCommentLine"]
+      "before": [
+        "<leader>",
+        "k",
+        "c"
+      ],
+      "commands": [
+        "editor.action.addCommentLine"
+      ]
     },
     {
-      "before": ["<leader>", "k", "u"],
-      "command": ["editor.action.removeCommentLine"]
+      "before": [
+        "<leader>",
+        "k",
+        "u"
+      ],
+      "command": [
+        "editor.action.removeCommentLine"
+      ]
     },
     {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["<leader>", "k", "c"],
-      "commands": ["editor.action.addCommentLine"]
+      "before": [
+        "<leader>",
+        "k",
+        "c"
+      ],
+      "commands": [
+        "editor.action.addCommentLine"
+      ]
     },
     {
-      "before": ["<leader>", "k", "u"],
-      "command": ["editor.action.removeCommentLine"]
+      "before": [
+        "<leader>",
+        "k",
+        "u"
+      ],
+      "command": [
+        "editor.action.removeCommentLine"
+      ]
     }
   ],
-
   // Integrated terminal
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-
   // Formatting
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -111,20 +135,20 @@
     "editor.defaultFormatter": "redhat.vscode-xml",
     "editor.tabSize": 4
   },
-
   // XML
   "xml.format.preservedNewlines": 1,
   "xml.format.spaceBeforeEmptyCloseTag": true,
   "xml.format.splitAttributes": false,
   "xml.format.enforceQuoteStyle": "preferred",
   "xml.preferences.quoteStyle": "double",
-
   // C++ / clang
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.intelliSenseCacheSize": 10,
-
   // Indent rainbow
-  "indentRainbow.excludedLanguages": ["plaintext", "cpp"],
+  "indentRainbow.excludedLanguages": [
+    "plaintext",
+    "cpp"
+  ],
   "indentRainbow.colors": [
     "rgba(66, 0, 57,0.1)",
     "rgba(147, 47, 109,0.1)",
@@ -133,10 +157,8 @@
   ],
   "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
-
   // Thunder client
   "thunder-client.defaultURL": "http://localhost",
-
   // Git
   "git.openRepositoryInParentFolders": "always",
   "gitlens.defaultGravatarsStyle": "retro",
@@ -147,7 +169,6 @@
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.virtualRepositories.enabled": true,
-
   // Diff
   "diffEditor.codeLens": false,
   "diffEditor.diffAlgorithm": "advanced",
@@ -162,7 +183,6 @@
   "diffEditor.renderSideBySide": true,
   "diffEditor.wordWrap": "inherit",
   "diffEditor.ignoreTrimWhitespace": false,
-
   // Prettier
   "prettier.endOfLine": "crlf",
   "prettier.tabWidth": 2,
